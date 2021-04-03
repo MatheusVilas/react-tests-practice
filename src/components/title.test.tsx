@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Title from "./index";
+
 import faker from "faker";
+import Title from "./title";
 
 test("tilte must have children printed as text", () => {
   const randomText = faker.lorem.words(30);
