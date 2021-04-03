@@ -10,19 +10,4 @@ test("tilte must have children printed as text", () => {
   const { getByText } = render(<Title>{randomText}</Title>);
 
   expect(getByText(randomText)).not.toBe(null);
-
-  // act(() => {
-  //   render(<Title>batata</Title>);
-  // });
-  // const secondElement = screen.getByText("batata");
-  // expect(secondElement).toBeInTheDocument();
-
-  // act(() => {
-  //   render(<Title>batata</Title>, container);
-  // });
-  // expect(container.textContent).toBe("batata");
-
-  // render(<Title>{randomText}</Title>);/
-  // const linkElement = screen.getByText(randomText);
-  // expect(linkElement).toBeInTheDocument();
 });
